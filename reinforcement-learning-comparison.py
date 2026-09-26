@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 class BernoulliEnvironment:
     def __init__(self, n_arms=10):
         self.n_arms = n_arms
-        # Stały seed dla powtarzalności wyników w pracy magisterskiej
+        # Stały seed dla powtarzalności wyników
         np.random.seed(42) 
         # Losujemy 10 prawdopodobieństw sukcesu z zakresu [0.1, 0.9]
         self.probabilities = np.random.uniform(0.1, 0.9, n_arms)
